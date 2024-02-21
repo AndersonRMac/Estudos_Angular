@@ -11,7 +11,7 @@ import { NgOptimizedImage } from '@angular/common';
   ],           // componentes, services e diretivas serão colocados em imports e providers
   providers:[],
   templateUrl: './home.component.html',
-  styleUrl: './home.component.css'
+  styleUrl: './home.component.scss'
 })
 export class HomeComponent {
 

@@ -1,0 +1,30 @@
+@import "../../../color-variables.scss";
+
+.main-section{
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Roboto";
+  padding: 0 70px;                    /*espaçamento para os lados*/
+
+    span{
+      font-size: 20px;
+      font-weight: 700;
+      color: $secondary-text;
+      }
+
+    h1{
+        font-size: 72px;
+        font-weight: 800;
+        color: $primary-text;
+      }
+  }
+
+
+
+@media(min-width:1080px){
+  .main-section{
+  flex-direction:row;
+  }
+}
