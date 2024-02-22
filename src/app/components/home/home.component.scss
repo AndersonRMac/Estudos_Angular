@@ -1,12 +1,19 @@
 @import "../../../color-variables.scss";
 
+main{
+  display: flex;
+  flex-direction: column;
+  gap: 84px ;                 //gap = espaçamento para os lados, levando em consideração o flex-direction que está como column, vertical.
+
+}
+
 .main-section{
   display: flex;
   justify-items: center;
   align-items: center;
-  flex-direction: column;
-  font-family: "Roboto";
-  padding: 0 70px;                    /*espaçamento para os lados*/
+  flex-direction: column;             /*deixa em colunas e quando estiver com uma tela maior fica em row, para ter o minimo de responsividade*/
+  font-family: "Roboto",sans-serif;
+                                      /*padding = espaçamento para os lados*/
 
     span{
       font-size: 20px;
@@ -19,9 +26,46 @@
         font-weight: 800;
         color: $primary-text;
       }
+}
+
+.benefit-section{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 70px;                  //gap = espaçamento para os lados
+
+
+  .benefit-data{
+      border-bottom: 10px solid $secondary-color;
+      padding-bottom: 40px;
+
+      h2{
+        font-family: "Roboto", sans-serif;
+        font-size: 60px;
+        font-weight: 600;
+        color: $primary-text;
+      }
+
   }
 
 
+  p{
+    font-size: 40px;
+    font-style: italic;
+    font-weight: 300;
+    font-family: "Poppins";
+
+    b{
+      background: -webkit-linear-gradient(360deg, $secondary-color, $light-primary-color);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-style: normal;
+    }
+  }
+
+
+
+}
 
 @media(min-width:1080px){
   .main-section{
