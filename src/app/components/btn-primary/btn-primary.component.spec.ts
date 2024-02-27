@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { BtnPrimaryComponent } from './btn-primary.component';
+
 
 describe('BtnPrimaryComponent', () => {
   let component: BtnPrimaryComponent;
@@ -8,7 +8,10 @@ describe('BtnPrimaryComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [BtnPrimaryComponent]
+      imports: [
+        BtnPrimaryComponent
+        
+    ]
     })
     .compileComponents();
     

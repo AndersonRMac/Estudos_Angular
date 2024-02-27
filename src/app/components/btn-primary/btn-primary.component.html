@@ -1,1 +1,17 @@
-<button class="btn-primary">fale com nossos especialistas</button>
+<button 
+    (click)="submit()" 
+    [class]="'btn '+ variant"
+    [disabled]="disabled"
+>
+
+    @if ("!loading"){
+    {{ btnText }}
+    }@else {
+        carregando...
+    }
+    
+</button>
+
+
+<!--para injetar funções, eu uso parênteses
+para injetar variáveis eu uso colchetes -->
